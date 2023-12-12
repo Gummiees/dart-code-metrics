@@ -2,7 +2,6 @@ import '../../reporters/models/checkstyle_reporter.dart';
 import '../../reporters/models/code_climate_reporter.dart';
 import '../../reporters/models/console_reporter.dart';
 import '../../reporters/models/github_reporter.dart';
-import '../../reporters/models/html_reporter.dart';
 import '../../reporters/models/json_reporter.dart';
 
 /// Represents all flag names used by the CLI.
@@ -22,7 +21,6 @@ class FlagNames {
   static const consoleVerboseReporter = ConsoleReporter.verboseId;
   static const codeClimateReporter = CodeClimateReporter.id;
   static const checkstyleReporter = CheckstyleReporter.id;
-  static const htmlReporter = HtmlReporter.id;
   static const jsonReporter = JsonReporter.id;
   static const githubReporter = GitHubReporter.id;
   static const gitlabCodeClimateReporter = CodeClimateReporter.alternativeId;

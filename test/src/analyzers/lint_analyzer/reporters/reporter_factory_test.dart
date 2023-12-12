@@ -4,7 +4,6 @@ import 'package:dart_code_metrics/src/analyzers/lint_analyzer/reporters/reporter
 import 'package:dart_code_metrics/src/analyzers/lint_analyzer/reporters/reporters_list/code_climate/lint_code_climate_reporter.dart';
 import 'package:dart_code_metrics/src/analyzers/lint_analyzer/reporters/reporters_list/console/lint_console_reporter.dart';
 import 'package:dart_code_metrics/src/analyzers/lint_analyzer/reporters/reporters_list/github/lint_github_reporter.dart';
-import 'package:dart_code_metrics/src/analyzers/lint_analyzer/reporters/reporters_list/html/lint_html_reporter.dart';
 import 'package:dart_code_metrics/src/analyzers/lint_analyzer/reporters/reporters_list/json/lint_json_reporter.dart';
 import 'package:test/test.dart';
 
@@ -25,10 +24,6 @@ void main() {
     expect(
       reporter(name: 'codeclimate', output: stdout, reportFolder: ''),
       isA<LintCodeClimateReporter>(),
-    );
-    expect(
-      reporter(name: 'html', output: stdout, reportFolder: ''),
-      isA<LintHtmlReporter>(),
     );
     expect(
       reporter(name: 'json', output: stdout, reportFolder: ''),

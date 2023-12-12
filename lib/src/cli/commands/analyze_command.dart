@@ -133,7 +133,6 @@ class AnalyzeCommand extends BaseCommand {
           FlagNames.codeClimateReporter,
           FlagNames.githubReporter,
           FlagNames.gitlabCodeClimateReporter,
-          FlagNames.htmlReporter,
           FlagNames.jsonReporter,
         ],
         defaultsTo: FlagNames.consoleReporter,
